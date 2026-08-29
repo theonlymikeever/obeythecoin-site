@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>obey the coin</title>
+<style>
+  :root { --cyan: #22d3ee; --magenta: #d946ef; --bg1: #1b0225; --bg2: #000000; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2) 70%);
+    color: #fff; font-family: -apple-system, "Helvetica Neue", sans-serif;
+    text-align: center; padding: 2rem;
+  }
+  .coin {
+    width: 140px; height: 140px; margin: 0 auto 2rem; border-radius: 50%;
+    border: 4px solid transparent;
+    background:
+      radial-gradient(circle at 34% 28%, #191926, #0a0a12 60%, #04040a) padding-box,
+      linear-gradient(90deg, var(--cyan), var(--magenta)) border-box;
+    box-shadow: 0 0 60px rgba(34, 211, 238, 0.35), 0 0 60px rgba(217, 70, 239, 0.25);
+    display: flex; align-items: center; justify-content: center;
+  }
+  h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
+  p.tag { color: #d1d5db; margin-top: 0.75rem; font-size: 1.05rem; }
+  nav { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  nav a {
+    color: var(--cyan); text-decoration: none; padding: 0.6rem 1.4rem;
+    border: 1px solid #4b5563; border-radius: 999px; font-size: 0.95rem;
+  }
+  nav a:hover { border-color: var(--cyan); }
+  footer { margin-top: 3rem; color: #6b7280; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="coin" aria-hidden="true">
+    <!-- The roman thumb, verbatim from OTCKit/Emblems.swift (thumbElements):
+         100x100 viewBox, silhouette stroke 5.5, detail stroke 3, round caps. -->
+    <svg viewBox="0 0 100 100" width="88" height="88" fill="none" stroke="#22d3ee"
+         stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M27.5 47 H34.5 V79 H27.5 A3 3 0 0 1 24.5 76 V50 A3 3 0 0 1 27.5 47 Z"/>
+      <path d="M34.5 49 C35.5 41 36.5 30 43.5 23 A6.5 6.5 0 0 1 54.5 25 C53.5 31 53 36 52.5 41 H68.5 A7 7 0 0 1 75.5 48 V72 A7 7 0 0 1 68.5 79 H34.5 V49 Z"/>
+      <path d="M56.5 50.5 H72.5 M56.5 60 H72.5 M56.5 69.5 H72.5" stroke-width="3"/>
+    </svg>
+  </div>
+  <h1>obey the coin</h1>
+  <p class="tag">a coin that makes your decisions so you don't have to.</p>
+  <nav>
+    <a href="support.html">support</a>
+    <a href="privacy.html">privacy</a>
+  </nav>
+  <footer>&copy; 2026 mike kerslake</footer>
+</main>
+</body>
+</html>
